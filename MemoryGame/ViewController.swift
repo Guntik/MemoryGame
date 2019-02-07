@@ -3,7 +3,7 @@
 //  MemoryGame
 //
 //  Created by on 27/11/2018.
-//  Copyright © 2018 G. All rights reserved.
+//  Copyright © 2018 Galina Gainetdinova. All rights reserved.
 //
 
 import UIKit
@@ -22,16 +22,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //adjusting the Screen
-        adjuctCollectionView()
+        adjustCollectionView()
         
         //get array of Cards
         cards = cardsFunctionality.getCards()
         
         //get backImage for Cards
-        backCard = cardsFunctionality.setBackCard(imageURL: cardsFunctionality.backImageUrl)
+        backCard = cardsFunctionality.setBackCard(imageURL: cardsFunctionality.backImage)
     }
     
-    func adjuctCollectionView()
+    func adjustCollectionView()
     {
         let itemSize = UIScreen.main.bounds.width/4 - 10
         let layout = UICollectionViewFlowLayout()
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         closeAllCards()
         cardsFunctionality.reloadCardFunctionality()
         cards = cardsFunctionality.getCards()
-        backCard = cardsFunctionality.setBackCard(imageURL: cardsFunctionality.backImageUrl)
+        backCard = cardsFunctionality.setBackCard(imageName: cardsFunctionality.backImage)
         collectionView.reloadData()
     }
     

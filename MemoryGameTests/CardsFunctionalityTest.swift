@@ -3,7 +3,7 @@
 //  MemoryGameTests
 //
 //  Created on 03/12/2018.
-//  Copyright © 2018 G. All rights reserved.
+//  Copyright © 2018 Galina Gainetdinova. All rights reserved.
 //
 
 import Foundation
@@ -32,7 +32,7 @@ class CardsFunktionalityTest: XCTestCase {
         XCTAssertTrue(cardsArray.count == 16)
     }
     
-    func testGetImage() {
+    /*func testGetImage() {
         let pictureList = cardsFunctionality.getPictures()
         
         //existing pictureArray
@@ -63,7 +63,7 @@ class CardsFunktionalityTest: XCTestCase {
         
         //array has 16 items
         XCTAssertTrue(imageOfArray.count == 16)
-    }
+    }*/
     
     func testAllPairs() {
         cardsFunctionality.counterPairs = 8

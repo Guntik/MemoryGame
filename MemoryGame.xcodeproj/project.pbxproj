@@ -21,7 +21,6 @@
 		1F52347921B7CD2400D0485E /* CollectionViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52347821B7CD2400D0485E /* CollectionViewCellTest.swift */; };
 		1F8C3EB021FA00B3006461E6 /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C3EAF21FA00B3006461E6 /* MemoryGameUITests.swift */; };
 		1F8C3EB221FA00D4006461E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C3EB121FA00D4006461E6 /* Info.plist */; };
-		1F8C3EB421FA0253006461E6 /* ImageUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C3EB321FA0253006461E6 /* ImageUrls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +60,6 @@
 		1F52347821B7CD2400D0485E /* CollectionViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellTest.swift; sourceTree = "<group>"; };
 		1F8C3EAF21FA00B3006461E6 /* MemoryGameUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryGameUITests.swift; path = MemoryGameUITests/MemoryGameUITests.swift; sourceTree = SOURCE_ROOT; };
 		1F8C3EB121FA00D4006461E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MemoryGameUITests/Info.plist; sourceTree = SOURCE_ROOT; };
-		1F8C3EB321FA0253006461E6 /* ImageUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +120,6 @@
 				1F33EC1C21AD908600AF7ACE /* Info.plist */,
 				1F33EC4021ADE10500AF7ACE /* MemoryGameClasses.swift */,
 				1F33EC4621B005DA00AF7ACE /* CardsFunctionality.swift */,
-				1F8C3EB321FA0253006461E6 /* ImageUrls.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -282,7 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8C3EB021FA00B3006461E6 /* MemoryGameUITests.swift in Sources */,
-				1F8C3EB421FA0253006461E6 /* ImageUrls.swift in Sources */,
 				1F33EC1321AD908400AF7ACE /* ViewController.swift in Sources */,
 				1F33EC4121ADE10500AF7ACE /* MemoryGameClasses.swift in Sources */,
 				1F33EC4721B005DA00AF7ACE /* CardsFunctionality.swift in Sources */,

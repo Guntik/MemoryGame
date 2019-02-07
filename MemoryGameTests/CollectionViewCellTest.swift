@@ -3,7 +3,7 @@
 //  MemoryGame
 //
 //  Created on 05/12/2018.
-//  Copyright © 2018 G. All rights reserved.
+//  Copyright © 2018 Galina Gainetdinova. All rights reserved.
 //
 
 import Foundation

@@ -3,7 +3,7 @@
 //  MemoryGameTests
 //
 //  Created on 27/11/2018.
-//  Copyright © 2018 G. All rights reserved.
+//  Copyright © 2018 Galina Gainetdinova. All rights reserved.
 //
 
 import XCTest
