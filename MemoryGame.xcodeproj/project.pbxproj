@@ -19,8 +19,6 @@
 		1F52347521B5C1C500D0485E /* CardsFunctionalityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52347421B5C1C500D0485E /* CardsFunctionalityTest.swift */; };
 		1F52347721B6B80900D0485E /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F52347621B6B80800D0485E /* ReadMe.md */; };
 		1F52347921B7CD2400D0485E /* CollectionViewCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52347821B7CD2400D0485E /* CollectionViewCellTest.swift */; };
-		1F8C3EB021FA00B3006461E6 /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8C3EAF21FA00B3006461E6 /* MemoryGameUITests.swift */; };
-		1F8C3EB221FA00D4006461E6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F8C3EB121FA00D4006461E6 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +56,6 @@
 		1F52347421B5C1C500D0485E /* CardsFunctionalityTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsFunctionalityTest.swift; sourceTree = "<group>"; };
 		1F52347621B6B80800D0485E /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		1F52347821B7CD2400D0485E /* CollectionViewCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellTest.swift; sourceTree = "<group>"; };
-		1F8C3EAF21FA00B3006461E6 /* MemoryGameUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MemoryGameUITests.swift; path = MemoryGameUITests/MemoryGameUITests.swift; sourceTree = SOURCE_ROOT; };
-		1F8C3EB121FA00D4006461E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MemoryGameUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +89,6 @@
 				1F52347621B6B80800D0485E /* ReadMe.md */,
 				1F33EC0F21AD908400AF7ACE /* MemoryGame */,
 				1F33EC2421AD908600AF7ACE /* MemoryGameTests */,
-				1F33EC2F21AD908600AF7ACE /* MemoryGameUITests */,
 				1F33EC0E21AD908400AF7ACE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -133,16 +128,6 @@
 				1F52347821B7CD2400D0485E /* CollectionViewCellTest.swift */,
 			);
 			path = MemoryGameTests;
-			sourceTree = "<group>";
-		};
-		1F33EC2F21AD908600AF7ACE /* MemoryGameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1F8C3EB121FA00D4006461E6 /* Info.plist */,
-				1F8C3EAF21FA00B3006461E6 /* MemoryGameUITests.swift */,
-			);
-			name = MemoryGameUITests;
-			path = "MemoryGame-SoundCloudUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +237,6 @@
 				1F33EC1B21AD908600AF7ACE /* LaunchScreen.storyboard in Resources */,
 				1F33EC1821AD908600AF7ACE /* Assets.xcassets in Resources */,
 				1F52347721B6B80900D0485E /* ReadMe.md in Resources */,
-				1F8C3EB221FA00D4006461E6 /* Info.plist in Resources */,
 				1F33EC1621AD908400AF7ACE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8C3EB021FA00B3006461E6 /* MemoryGameUITests.swift in Sources */,
 				1F33EC1321AD908400AF7ACE /* ViewController.swift in Sources */,
 				1F33EC4121ADE10500AF7ACE /* MemoryGameClasses.swift in Sources */,
 				1F33EC4721B005DA00AF7ACE /* CardsFunctionality.swift in Sources */,

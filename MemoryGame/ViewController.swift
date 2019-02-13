@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         cards = cardsFunctionality.getCards()
         
         //get backImage for Cards
-        backCard = cardsFunctionality.setBackCard(imageURL: cardsFunctionality.backImage)
+        backCard = cardsFunctionality.setBackCard(imageName: cardsFunctionality.backImage)
     }
     
     func adjustCollectionView()

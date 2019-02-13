@@ -27,15 +27,7 @@ class CardsFunctionality {
     //get arrray of images
     func getImages() -> [UIImage]
     {
-        //array with all pictures from JSON
-        //let pictureList = getPictures()
-        
-        //array with 16 URL
-        //arrayString = makeArray(array: pictureList)
-        
-        //array with Images
-        let imageOfArray = imageArray(array: arrayString)
-
+        let imageOfArray = imageArray(array: ImageArray)
         return imageOfArray
     }
     
@@ -65,28 +57,26 @@ class CardsFunctionality {
     //array of images
     func imageArray(array:[String]) -> [UIImage]{
         var images = [UIImage]()
-        array.shuffle() // shaffle the names for cards
         for index in 0...15 {
-            //let url = URL(string: array[index])
-            //let data = try? Data(contentsOf: url!)
-            images.append(UIImage(array[index])!)
+            if array[index] != "" {
+                images.append(UIImage(contentsOfFile: array[index])!)
+            }
         }
+        images.shuffle() //shuffle cards
         return images
     }
     
     //set back-image for the card
     func setBackCard(imageName: String) -> UIImage
     {
-        let backCard = getImageOfBackCard(back: imageName)
+        let backCard = getImageOfBackCard()
         return backCard
     }
     
     //get back-image of the card
-    func getImageOfBackCard(back: String) -> UIImage
+    func getImageOfBackCard() -> UIImage
     {
-        //let url = URL(string: back)
-        //let data = try? Data(contentsOf: url!)
-        if let imageBackCard = UIImage(back) {
+        if let imageBackCard = UIImage(contentsOfFile: backImage) {
             return imageBackCard
         }
         else {
@@ -94,62 +84,6 @@ class CardsFunctionality {
             return UIImage()
         }
     }
-    
-    //selecting first 8 items and doppel it with shufffling
-    /*func makeArray(array: [String]) ->[String] {
-        var array16 = [String]()
-        array16 = (array[0 ..< 8] + array[0 ..< 8]).shuffled()
-        backImageUrl = array[8]
-        return array16
-    }*/
-    
-    //request from URL
-    /*func setRequest() -> URLRequest {
-        let url = "" // url of the image
-        let myUrl=URL(string:url)
-        var request = URLRequest(url:myUrl!)
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.httpMethod = "GET"
-        return request
-    }*/
-    
-    //get shuffled array with URL from JSON
-    /*func getPictures() -> [String] {
-        var pictureList = [String]()
-        var list = [String]()
-        
-        /*let request = self.setRequest()
-        let semaphore = DispatchSemaphore(value: 0)
-        URLSession.shared.dataTask(with: request){
-            data, response, error in
-            guard(error == nil) else {
-                print( "Error: " + error.debugDescription)
-                return
-            }
-            do{
-                let parseResult = try JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
-                guard let
-                    jsonDictionary = parseResult as NSDictionary?,
-                    let tracks = jsonDictionary["tracks"]
-                    else { return }
-                let trackArray = tracks as! NSArray
-                for index in 0...trackArray .count-1 {
-                    let track = trackArray [index] as! [String : AnyObject]
-                    let image = track["artwork_url"] as! String
-                    list.append(image)
-                }
-            } catch {
-                print("Could not parse data as Json")
-                return
-            }
-            semaphore.signal()
-            }.resume()
-        semaphore.wait()*/
-        
-        pictureList = list.shuffled()
-        return pictureList
-    }*/
-    
     
     //showing messagies and alerts
     func showMessage(messageString: String) -> UIAlertController {
@@ -161,7 +95,6 @@ class CardsFunctionality {
     //reloading Game
     func reloadCardFunctionality() {
         counterPairs = 0
-        backImageUrl = ""
         isMatched = false
     }
     
@@ -173,7 +106,7 @@ class CardsFunctionality {
         let indexSecondPath = IndexPath(item: secondCard.position, section: 0)
         
         //if matched
-        if (second.imageString == mathingStringName)
+        if (secondCard.imageString == mathingStringName)
         {
             isMatched = true
         }
