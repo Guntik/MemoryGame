@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         
         //get array of Cards
         cards = cardsFunctionality.getCards()
+        cards.shuffle() // schuffle the cards
         
         //get backImage for Cards
         backCard = cardsFunctionality.setBackCard(imageName: cardsFunctionality.backImage)

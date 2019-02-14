@@ -12,22 +12,23 @@ import UIKit
 class CardsFunctionality {
 
     var counterPairs = 0
-    var backImage = "BackImage_jpg"
-    var arrayString = [String]()
+    var backImage = "BackImage"
     var isMatched = false
-    var ImageArray = ["Haus", "Haus1", "Fisch", "Fisch1", "Apfel", "Apfel1", "Kleid", "Kleid1",  "Stern", "Stern1", "Sonne", "Sonne1", "Fahne", "Fahne1", "Uhr", "Uhr1"]
+    var stringArray = ["Haus", "Haus1", "Fisch", "Fisch1", "Apfel", "Apfel1", "Kleid", "Kleid1",  "Stern", "Stern1", "Sonne", "Sonne1", "Fahne", "Fahne1", "Uhr", "Uhr1"]
+    var cardsStringArray = [String]()
     
     //get array of cards
     func getCards() -> [Card]{
         let imageArray = getImages()
-        let cardsArray = CardsArray(array: imageArray, stringArray: arrayString)
+        let cardsArray = CardsArray(array: imageArray, stringArray: cardsStringArray)
         return cardsArray
     }
     
     //get arrray of images
     func getImages() -> [UIImage]
     {
-        let imageOfArray = imageArray(array: ImageArray)
+        let imageOfArray = imageArray(array: stringArray)
+        cardsStringArray = stringArray
         return imageOfArray
     }
     
@@ -48,7 +49,7 @@ class CardsFunctionality {
             let card = Card()
             card.position = index
             card.image = array[index]
-            card.imageString = stringArray[index]
+            card.imageString = cardsStringArray[index]
             cards.append(card)
         }
         return cards
@@ -59,10 +60,9 @@ class CardsFunctionality {
         var images = [UIImage]()
         for index in 0...15 {
             if array[index] != "" {
-                images.append(UIImage(contentsOfFile: array[index])!)
+                images.append(UIImage(named: array[index])!) // add test for .png
             }
         }
-        images.shuffle() //shuffle cards
         return images
     }
     
@@ -76,7 +76,7 @@ class CardsFunctionality {
     //get back-image of the card
     func getImageOfBackCard() -> UIImage
     {
-        if let imageBackCard = UIImage(contentsOfFile: backImage) {
+        if let imageBackCard = UIImage(named: backImage) {
             return imageBackCard
         }
         else {

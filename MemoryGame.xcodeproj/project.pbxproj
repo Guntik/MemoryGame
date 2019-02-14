@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F237A50221422C3004C8CAF /* Sonne1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A3F221422C2004C8CAF /* Sonne1.png */; };
+		1F237A51221422C3004C8CAF /* Stern1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A40221422C2004C8CAF /* Stern1.png */; };
+		1F237A52221422C3004C8CAF /* Uhr1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A41221422C2004C8CAF /* Uhr1.png */; };
+		1F237A53221422C3004C8CAF /* Fisch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A42221422C2004C8CAF /* Fisch1.png */; };
+		1F237A54221422C3004C8CAF /* Haus.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A43221422C2004C8CAF /* Haus.png */; };
+		1F237A55221422C3004C8CAF /* Kleid1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A44221422C2004C8CAF /* Kleid1.png */; };
+		1F237A56221422C3004C8CAF /* Fahne1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A45221422C2004C8CAF /* Fahne1.png */; };
+		1F237A57221422C3004C8CAF /* Apfel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A46221422C2004C8CAF /* Apfel.png */; };
+		1F237A58221422C3004C8CAF /* Kleid.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A47221422C2004C8CAF /* Kleid.png */; };
+		1F237A59221422C3004C8CAF /* Stern.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A48221422C2004C8CAF /* Stern.png */; };
+		1F237A5A221422C3004C8CAF /* Haus1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A49221422C2004C8CAF /* Haus1.png */; };
+		1F237A5B221422C3004C8CAF /* Fisch.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4A221422C2004C8CAF /* Fisch.png */; };
+		1F237A5C221422C3004C8CAF /* BackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4B221422C2004C8CAF /* BackImage.png */; };
+		1F237A5D221422C3004C8CAF /* Fahne.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4C221422C2004C8CAF /* Fahne.png */; };
+		1F237A5E221422C3004C8CAF /* Uhr.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4D221422C3004C8CAF /* Uhr.png */; };
+		1F237A5F221422C3004C8CAF /* Apfel1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4E221422C3004C8CAF /* Apfel1.png */; };
+		1F237A60221422C3004C8CAF /* Sonne.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F237A4F221422C3004C8CAF /* Sonne.png */; };
 		1F33EC1121AD908400AF7ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33EC1021AD908400AF7ACE /* AppDelegate.swift */; };
 		1F33EC1321AD908400AF7ACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F33EC1221AD908400AF7ACE /* ViewController.swift */; };
 		1F33EC1621AD908400AF7ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F33EC1421AD908400AF7ACE /* Main.storyboard */; };
@@ -39,6 +56,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F237A3F221422C2004C8CAF /* Sonne1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sonne1.png; path = Pictures/Sonne1.png; sourceTree = SOURCE_ROOT; };
+		1F237A40221422C2004C8CAF /* Stern1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stern1.png; path = Pictures/Stern1.png; sourceTree = SOURCE_ROOT; };
+		1F237A41221422C2004C8CAF /* Uhr1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Uhr1.png; path = Pictures/Uhr1.png; sourceTree = SOURCE_ROOT; };
+		1F237A42221422C2004C8CAF /* Fisch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fisch1.png; path = Pictures/Fisch1.png; sourceTree = SOURCE_ROOT; };
+		1F237A43221422C2004C8CAF /* Haus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Haus.png; path = Pictures/Haus.png; sourceTree = SOURCE_ROOT; };
+		1F237A44221422C2004C8CAF /* Kleid1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kleid1.png; path = Pictures/Kleid1.png; sourceTree = SOURCE_ROOT; };
+		1F237A45221422C2004C8CAF /* Fahne1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fahne1.png; path = Pictures/Fahne1.png; sourceTree = SOURCE_ROOT; };
+		1F237A46221422C2004C8CAF /* Apfel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apfel.png; path = Pictures/Apfel.png; sourceTree = SOURCE_ROOT; };
+		1F237A47221422C2004C8CAF /* Kleid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Kleid.png; path = Pictures/Kleid.png; sourceTree = SOURCE_ROOT; };
+		1F237A48221422C2004C8CAF /* Stern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Stern.png; path = Pictures/Stern.png; sourceTree = SOURCE_ROOT; };
+		1F237A49221422C2004C8CAF /* Haus1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Haus1.png; path = Pictures/Haus1.png; sourceTree = SOURCE_ROOT; };
+		1F237A4A221422C2004C8CAF /* Fisch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fisch.png; path = Pictures/Fisch.png; sourceTree = SOURCE_ROOT; };
+		1F237A4B221422C2004C8CAF /* BackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackImage.png; path = Pictures/BackImage.png; sourceTree = SOURCE_ROOT; };
+		1F237A4C221422C2004C8CAF /* Fahne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fahne.png; path = Pictures/Fahne.png; sourceTree = SOURCE_ROOT; };
+		1F237A4D221422C3004C8CAF /* Uhr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Uhr.png; path = Pictures/Uhr.png; sourceTree = SOURCE_ROOT; };
+		1F237A4E221422C3004C8CAF /* Apfel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Apfel1.png; path = Pictures/Apfel1.png; sourceTree = SOURCE_ROOT; };
+		1F237A4F221422C3004C8CAF /* Sonne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sonne.png; path = Pictures/Sonne.png; sourceTree = SOURCE_ROOT; };
 		1F33EC0D21AD908400AF7ACE /* MemoryGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F33EC1021AD908400AF7ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F33EC1221AD908400AF7ACE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +117,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F237A1C22141DC0004C8CAF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1F237A46221422C2004C8CAF /* Apfel.png */,
+				1F237A4E221422C3004C8CAF /* Apfel1.png */,
+				1F237A4B221422C2004C8CAF /* BackImage.png */,
+				1F237A4C221422C2004C8CAF /* Fahne.png */,
+				1F237A45221422C2004C8CAF /* Fahne1.png */,
+				1F237A4A221422C2004C8CAF /* Fisch.png */,
+				1F237A42221422C2004C8CAF /* Fisch1.png */,
+				1F237A43221422C2004C8CAF /* Haus.png */,
+				1F237A49221422C2004C8CAF /* Haus1.png */,
+				1F237A47221422C2004C8CAF /* Kleid.png */,
+				1F237A44221422C2004C8CAF /* Kleid1.png */,
+				1F237A4F221422C3004C8CAF /* Sonne.png */,
+				1F237A3F221422C2004C8CAF /* Sonne1.png */,
+				1F237A48221422C2004C8CAF /* Stern.png */,
+				1F237A40221422C2004C8CAF /* Stern1.png */,
+				1F237A4D221422C3004C8CAF /* Uhr.png */,
+				1F237A41221422C2004C8CAF /* Uhr1.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		1F33EC0421AD908400AF7ACE = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +164,7 @@
 		1F33EC0F21AD908400AF7ACE /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				1F237A1C22141DC0004C8CAF /* Images */,
 				1F33EC1021AD908400AF7ACE /* AppDelegate.swift */,
 				1F33EC1221AD908400AF7ACE /* ViewController.swift */,
 				1F33EC1421AD908400AF7ACE /* Main.storyboard */,
@@ -234,10 +293,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F237A57221422C3004C8CAF /* Apfel.png in Resources */,
+				1F237A54221422C3004C8CAF /* Haus.png in Resources */,
+				1F237A5E221422C3004C8CAF /* Uhr.png in Resources */,
+				1F237A58221422C3004C8CAF /* Kleid.png in Resources */,
+				1F237A52221422C3004C8CAF /* Uhr1.png in Resources */,
 				1F33EC1B21AD908600AF7ACE /* LaunchScreen.storyboard in Resources */,
 				1F33EC1821AD908600AF7ACE /* Assets.xcassets in Resources */,
+				1F237A53221422C3004C8CAF /* Fisch1.png in Resources */,
+				1F237A55221422C3004C8CAF /* Kleid1.png in Resources */,
 				1F52347721B6B80900D0485E /* ReadMe.md in Resources */,
+				1F237A5B221422C3004C8CAF /* Fisch.png in Resources */,
+				1F237A60221422C3004C8CAF /* Sonne.png in Resources */,
+				1F237A5D221422C3004C8CAF /* Fahne.png in Resources */,
+				1F237A5A221422C3004C8CAF /* Haus1.png in Resources */,
 				1F33EC1621AD908400AF7ACE /* Main.storyboard in Resources */,
+				1F237A51221422C3004C8CAF /* Stern1.png in Resources */,
+				1F237A5C221422C3004C8CAF /* BackImage.png in Resources */,
+				1F237A50221422C3004C8CAF /* Sonne1.png in Resources */,
+				1F237A59221422C3004C8CAF /* Stern.png in Resources */,
+				1F237A5F221422C3004C8CAF /* Apfel1.png in Resources */,
+				1F237A56221422C3004C8CAF /* Fahne1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class Card {
-    
     var image: UIImage!
     var imageString = ""
     var position: Int = 0
