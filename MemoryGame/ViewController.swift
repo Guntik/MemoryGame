@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         
         //get array of Cards
         cards = cardsFunctionality.getCards()
-        cards.shuffle() // schuffle the cards
         
         //get backImage for Cards
         backCard = cardsFunctionality.setBackCard(imageName: cardsFunctionality.backImage)
@@ -104,7 +103,7 @@ class ViewController: UIViewController {
         secondCell?.isUserInteractionEnabled = false
         (secondCell as! CollectionViewCell).isCardSelected = true
         
-        //reload counter of selected card and array with positions of selected cards
+        //reload counter of selected cards and array with positions of selected cards
         self.countsOfSelectedCards = 0
         self.positionArray.removeAll()
         cardsFunctionality.isMatched = false
@@ -141,6 +140,7 @@ class ViewController: UIViewController {
                 {
                     //if they don't match
                     notMatchedCard(firstIndex: cardsIndexPaths.firstIndexPath, secondIndex: cardsIndexPaths.secondIndexPath)
+                    
                 }
                 else {
                     //if selected cards are matched
@@ -181,14 +181,12 @@ extension ViewController: UICollectionViewDataSource{
     }
 }
 
-extension ViewController: UICollectionViewDelegate{
+extension ViewController: UICollectionViewDelegate {
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        //get selected cell
-        guard let cell = collectionView.cellForItem(at: indexPath) else { return }
-        
-        matchingSelectedCards(index: indexPath, cell: cell)
-    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+            //get selected cell
+            guard let cell = collectionView.cellForItem(at: indexPath) else { return }
+            matchingSelectedCards(index: indexPath, cell: cell)
+        }
 
 }

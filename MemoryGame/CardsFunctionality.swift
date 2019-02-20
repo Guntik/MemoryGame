@@ -20,15 +20,16 @@ class CardsFunctionality {
     //get array of cards
     func getCards() -> [Card]{
         let imageArray = getImages()
-        let cardsArray = CardsArray(array: imageArray, stringArray: cardsStringArray)
+        var cardsArray = CardsArray(array: imageArray, stringArray: cardsStringArray)
         return cardsArray
     }
     
     //get arrray of images
     func getImages() -> [UIImage]
     {
-        let imageOfArray = imageArray(array: stringArray)
-        cardsStringArray = stringArray
+        let shuffledArray = stringArray.shuffled() // shuffle the array with strings
+        let imageOfArray = imageArray(array: shuffledArray)
+        cardsStringArray = shuffledArray
         return imageOfArray
     }
     
@@ -63,20 +64,14 @@ class CardsFunctionality {
                 images.append(UIImage(named: array[index])!) // add test for .png
             }
         }
+        //images.shuffle() //shuffle the images for cards
         return images
     }
     
     //set back-image for the card
     func setBackCard(imageName: String) -> UIImage
     {
-        let backCard = getImageOfBackCard()
-        return backCard
-    }
-    
-    //get back-image of the card
-    func getImageOfBackCard() -> UIImage
-    {
-        if let imageBackCard = UIImage(named: backImage) {
+        if let imageBackCard = UIImage(named: imageName) {
             return imageBackCard
         }
         else {
@@ -85,12 +80,6 @@ class CardsFunctionality {
         }
     }
     
-    //showing messagies and alerts
-    func showMessage(messageString: String) -> UIAlertController {
-        let alert = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        return alert
-    }
     
     //reloading Game
     func reloadCardFunctionality() {
@@ -101,17 +90,31 @@ class CardsFunctionality {
     //matching two Cards
     func compareCards(firstCard: Card, secondCard: Card) -> (firstIndexPath:IndexPath, secondIndexPath:IndexPath)
     {
-        let mathingStringName = firstCard.imageString + "1" //creating string for mathing Image (imageName+1)
         let indexFirstPath = IndexPath(item: firstCard.position, section: 0)
         let indexSecondPath = IndexPath(item: secondCard.position, section: 0)
-        
-        //if matched
-        if (secondCard.imageString == mathingStringName)
-        {
-            isMatched = true
+
+        //finding the last character (Number 1) in firsthe string name
+        if (firstCard.imageString.suffix(1) == "1") {
+            //if matched
+            if (secondCard.imageString == firstCard.imageString.dropLast())
+            {
+                isMatched = true
+            }
+        }
+        else if (secondCard.imageString.suffix(1) == "1"){
+            if (secondCard.imageString.dropLast() == firstCard.imageString)
+            {
+                isMatched = true
+            }
         }
         return (indexFirstPath, indexSecondPath)
     }
     
+    //showing messagies and alerts
+    func showMessage(messageString: String) -> UIAlertController {
+        let alert = UIAlertController(title: "Alert", message: messageString, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        return alert
+    }
     
 }
